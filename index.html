@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>GetJobOffer</title>
+</head>
+<body>
+
+<div class="small-container">
+    <h1 id="h1">Front-End</h1>
+    <div id="question_wrapper">
+        <div id="question_text"></div>
+        <form>
+            <input id="item" type="text" placeholder="New" required/>
+            <input id="submitBtn" type="submit">
+        </form>
+    </div>
+</div>
+
+<div id="wrapper" style="display: flex; flex-direction: column;"></div>
+
+<div id="spin_subscribe" class="spin__subscribe">
+    <div class="spin_subscribe-title">Вышлите мне результаты на почту:</div>
+    <form class="spin__form" action="mail.php">
+        <input class="spin__form-name" name="name" type="text" required placeholder="Имя" value="">
+        <input class="spin__form-email" name="mail" type="email" required placeholder="E-mail" value=""><br>
+        <input id="mailText" type="hidden" name="results">
+        <label class="spin__form-checkbox-label"><input checked class="spin__form-checkbox approve" type="checkbox">Нажимая на кнопку, Вы даете согласие на <a class="spin__form-checkbox-link" href="/hdpr.html" target="_blank">обработку своих персональных данных</a></label>
+        <input class="spin__form-submit button button_color" type="submit" value="Отправить">
+    </form>
+    <div class="spin__form-confidential">Ваши контактные данные в безопасности и не будут переданы третьим лицам.</div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
