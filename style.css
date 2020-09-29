@@ -1,11 +1,18 @@
 body {
-    margin: 0;
-    /*background-color: #F7C40D;*/
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 p {
     border: 1px solid grey;
 }
+
+#answer {
+    margin: 20px;
+}
+
 .wrapper-main-img {
     height: 100%;
     position: relative;
@@ -34,6 +41,9 @@ p {
     border-radius: 5px;
     margin: 0 auto;
     display: none;
+    position: fixed;
+    right: 30px;
+    top: 50px;
 }
 
 .spin__subscribe .spin_subscribe-title {
