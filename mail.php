@@ -10,7 +10,7 @@ $messageToAdmin = "Имя: " . $customerName . "<br><br>E-mail: " . $customerMai
 $answerResults = trim($_GET["results"]);
 $messageToUser = "Здравствуйте, " . $customerName . "!<br><br> Ниже приведены результаты Вашего тестирования:<br><br>" . $answerResults;
 
-$headers = "Content-type: text/html; charset=utf-8 \r\n";
+$headers = "Content-type: text/html; charset=utf-8\r\n";
 $headers .= "From: <admin@getjoboffer.com>\r\n";
 $headers .= "Reply-To: admin@getjoboffer.com\r\n";
 $headers .= "Content-type: text/html\r\n";
